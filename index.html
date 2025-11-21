@@ -321,6 +321,109 @@
         .my-svg-icon:hover {
             fill: var(--red);
         }
+
+        @media screen and (max-width: 1024px) {
+            section {
+                padding: 60px 5%;
+            }
+
+            .hero h1 {
+                font-size: 4rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about-container img {
+                width: 70% !important;
+                height: auto !important;
+                margin: 0 auto 30px auto;
+                display: block;
+            }
+
+            .quote {
+                margin-left: 0;
+                margin-top: 30px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                height: auto;
+                min-height: 80vh;
+                padding-top: 120px;
+                text-align: center;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                margin-inline-start: 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .about-container img {
+                width: 90% !important;
+            }
+
+            .modal-window {
+                width: 95%;
+                height: 85vh;
+                overflow-y: auto;
+                padding: 15px;
+                transform: scale(1) !important;
+            }
+
+            .modal-overlay:target .modal-window {
+                transform: scale(1);
+            }
+
+            .modal-image {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .modal-image img {
+                width: 100% !important;
+                max-height: none !important;
+            }
+
+            .modal-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .skill-tags {
+                justify-content: center;
+            }
+            
+            .skill-img {
+                width: 60px;
+                height: 60px;
+     
+            }
+        }
        
     </style>
 </head>
@@ -451,7 +554,7 @@
             </a>
 
             <a href="#p5" class="card">
-                <img src="webject.png" alt="Project 5" class="card-img">
+                <img src="web1.png" alt="Project 5" class="card-img">
                 <div class="card-content">
                     <h3>Bau Bau</h3>
                     <p>click for more</p>
@@ -534,14 +637,16 @@
     <div id="p5" class="modal-overlay">
         <div class="modal-window">
             <div class="modal-image">
-                <img src="femboybanner2.jpg" style="width:33%; max-height:300px; object-fit:contain;">
-                <img src="femboybanner.jpg" style="width:33%; max-height:300px; object-fit:contain;">
-                <img src="femboycontent.png" style="width:33%; max-height:300px; object-fit:contain;">
+                <img src="web1.png" style="width:33%; max-height:300px; object-fit:contain;">
+                <img src="web2.png" style="width:33%; max-height:300px; object-fit:contain;">
+                <img src="web3.png" style="width:33%; max-height:300px; object-fit:contain;">
             </div>  
 
             <div class="modal-text">
-                <h2>PROJECT 5</h2>
-                <p>project5 detail</p>
+                <h2>Bau Bau</h2>
+                <p>  
+                    I designed and developed a fully responsive personal website using HTML5 and CSS3 without relying on external frameworks or templates. Using advanced layout techniques such as Flexbox and CSS Grid, I built a dedicated digital gallery that effectively showcases my projects. The platform is carefully optimized for cross-device compatibility, delivering a seamless viewing experience on both desktop and mobile devices.
+                </p>
             </div>
         </div>
         <a href="#portfolio" class="bg-click-close"></a>
